@@ -1,0 +1,9 @@
+server:
+  port: 8001
+spring:
+  application:
+    name: RetailBank
+  security:
+    user:
+      name: amit
+      password: codetechies
