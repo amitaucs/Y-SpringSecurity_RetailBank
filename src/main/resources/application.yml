@@ -3,7 +3,13 @@ server:
 spring:
   application:
     name: RetailBank
-  security:
-    user:
-      name: amit
-      password: codetechies
+  datasource:
+    url: jdbc:mysql://localhost:3306/yRetailBank
+    username: root
+    password: root
+    jpa:
+      properties:
+        hibernate:
+          dialect: org.hibernate.dialect.MySQL57Dialect
+      generate-ddl: true
+      show-sql: true
